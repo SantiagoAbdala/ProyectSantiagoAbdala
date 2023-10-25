@@ -1,0 +1,70 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Familia: 'Roboto'
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+Iconos
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+<div class="burger-menu">
+<i class="fas fa-bars"></i>
+</div>
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #EAC926;
+}
+
+.barra-busqueda {
+    background-color: #ebebeb;
+}
+
+.boton-busqueda {
+    background-color: #666;
+}
+
+.navegacion {
+    background-color: #EAC926;
+}
+
+.basado-en-ultima-visita h2 {
+    font-size: 24px;
+}
+
+.seccion-ofertas h2 {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+.burger-menu {
+    background-color: #03264C;
+}
