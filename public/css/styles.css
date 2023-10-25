@@ -6,25 +6,6 @@ Celeste: #1259c3;
 Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
-
-Familia: 'Roboto'
-
-Tamaños Tipográficos
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px
-
-Iconos
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
-<div class="burger-menu">
-<i class="fas fa-bars"></i>
-</div>
-
-font-family: 'Roboto', sans-serif;
-
 */
 
 body {
@@ -67,4 +48,31 @@ body {
 
 .burger-menu {
     background-color: #03264C;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+}
+
+.burger-menu i {
+    color: #ebebeb;
+    text-align: center;
+}
+
+.imagen {
+    width: 15%;
+}
+
+.logo {
+    width: 30%;
+}
+
+.footer {
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+footer i {
+    color: #03264C;
+    font-size: 50px;
 }
