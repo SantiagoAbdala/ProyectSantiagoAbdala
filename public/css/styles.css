@@ -8,10 +8,31 @@ Gris claro: #ebebeb;
 Verde: #39b54a;
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background-color: #EAC926;
+}
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 20px #EAC926;
+}
+
+main article {
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 100%;
 }
 
 .barra-busqueda {
@@ -26,6 +47,33 @@ body {
     background-color: #EAC926;
 }
 
+.burger-menu {
+    background-color: #03264C;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 24px;
+    width: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burger-menu i {
+    color: #ebebeb;
+}
+
+.basado-en-ultima-visita {
+    background-color: #ebebeb;
+    border-top: solid 1px #ebebeb;
+    border: 15px;
+}
+
+.seccion-ofertas {
+    background-color: #ebebeb;
+    border-top: solid 1px #ebebeb;
+    border: 15px;
+}
+
 .basado-en-ultima-visita h2 {
     font-size: 24px;
 }
@@ -34,37 +82,45 @@ body {
     font-size: 24px;
 }
 
+.iconos {
+    align-items: left;
+    position: relative;
+}
+
+.fa-truck {
+    font-size: 200%;
+    color: #20c200;
+    position: relative;
+    border: 1px solid #20c200;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
 .precios {
     font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
 .descuentos {
     font-size: 16px;
+    text-align: left;
+    color: #20c200;
+    margin-top: 5px;
 }
 
 .descripciones {
     font-size: 16px;
-}
-
-.burger-menu {
-    background-color: #03264C;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    text-align: center;
-}
-
-.burger-menu i {
-    color: #ebebeb;
-    text-align: center;
+    text-align: left;
 }
 
 .imagen {
-    width: 15%;
-}
-
-.logo {
-    width: 30%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .footer {
@@ -75,4 +131,35 @@ body {
 footer i {
     color: #03264C;
     font-size: 50px;
+}
+
+
+
+/* Tablets */
+@media (min-width: 361px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (max-width: 769px) {
+    .navegacion {
+        display: none;
+    }
+    .descripciones {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
 }
