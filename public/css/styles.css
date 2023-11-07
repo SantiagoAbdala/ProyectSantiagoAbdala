@@ -10,19 +10,25 @@ Verde: #39b54a;
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background-color: #EAC926;
+    background-color: #ebebeb;
+}
+
+.banner {
+    width: 100%;
 }
 
 main {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border-top: solid 20px #EAC926;
+    margin-top: 20px;
 }
 
 main article {
@@ -31,20 +37,72 @@ main article {
     margin-bottom: 30px;
 }
 
+main h2 {
+    margin-bottom: 10px;
+}
+
 .logo {
-    width: 100%;
+    max-width: 45%;
+}
+
+.main-header {
+    padding: 15px 0;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.opciones-pago {
+    max-width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.busqueda {
+    width: 45%;
+    display: flex;
 }
 
 .barra-busqueda {
     background-color: #ebebeb;
+    border-radius: 5px 0px 0px 5px;
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+    border: none;
 }
 
 .boton-busqueda {
     background-color: #ebebeb;
+    border-radius: 0px 5px 5px 0px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .navegacion {
     background-color: #EAC926;
+    display: none;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+
+.navegacion li {
+    margin: 0 7px;
 }
 
 .burger-menu {
@@ -52,10 +110,10 @@ main article {
     border-radius: 10%;
     cursor: pointer;
     font-size: 24px;
-    width: 10%;
+    max-width: 50px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: auto;
 }
 
 .burger-menu i {
@@ -83,49 +141,70 @@ main article {
 }
 
 .iconos {
-    align-items: left;
     position: relative;
+    width: 100%;
+    display: flex;
 }
 
-.fa-truck {
-    font-size: 200%;
-    color: #20c200;
+.iconos .fa-solid {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.producto {
+    display: flex;
     position: relative;
-    border: 1px solid #20c200;
-    border-radius: 25px;
-    width: 40px;
-    height: 40px;
-    padding-top: 5px;
-    padding-left: 5px;
+    flex-direction: column;
 }
 
 .precios {
     font-size: 18px;
-    text-align: left;
     margin-bottom: 5px;
+    display: flex;
+    margin-right: 5px;
 }
 
 .descuentos {
     font-size: 16px;
-    text-align: left;
     color: #20c200;
     margin-top: 5px;
+    display: flex;
+    margin-left: 5px;
+}
+
+.precios-descuentos {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 5%
 }
 
 .descripciones {
     font-size: 16px;
-    text-align: left;
+    margin-left: 5%;
+    display: none;
 }
 
 .imagen {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    border-bottom: 1px solid #666;
 }
 
-.footer {
+footer {
     text-align: center;
     background-color: #ebebeb;
+    border-top: 2px solid #666;
 }
 
 footer i {
@@ -135,28 +214,68 @@ footer i {
 
 
 
-/* Tablets */
 @media (min-width: 361px) {
     .producto {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-}
 
-/* Desktop */
-@media (min-width: 769px) {
-    .producto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .logo {
+        width: 30%;
     }
+
+    .busqueda {
+        width: 30%
+    }
+
+    .opciones-pago {
+        width: 30%;
+    }
+
     .burger-menu {
         display: none;
     }
+
+    .navegacion {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navegacion ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navegacion a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 20px 0;
+        font-size: 17px;
+    }
 }
 
-@media (max-width: 769px) {
-    .navegacion {
-        display: none;
+
+@media (min-width: 768px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
     }
-    .descripciones {
-        display: none;
+
+    .basado-en-ultima-visita {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
