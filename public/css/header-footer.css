@@ -1,0 +1,194 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+}
+
+.logo {
+    max-width: 45%;
+}
+
+.main-header {
+    padding: 15px 0;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 6vh;
+}
+
+.opciones-pago {
+    max-width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.busqueda {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.barra-busqueda {
+    background-color: #ebebeb;
+    border-radius: 5px 0px 0px 5px;
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+    border: none;
+    height: 100%;
+}
+
+.boton-busqueda {
+    background-color: #ebebeb;
+    border-radius: 0px 5px 5px 0px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 100%;
+}
+
+.navegacion {
+    background-color: #EAC926;
+    display: none;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+
+.navegacion li {
+    margin: 0 7px;
+}
+
+.burger-menu {
+    background-color: #03264C;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 24px;
+    max-width: 50px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.burger-menu i {
+    color: #ebebeb;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: #ebebeb;
+    border-top: 2px solid #666;
+    padding-top: 20px;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 50px;
+}
+
+footer section {
+    margin: 20px;
+}
+
+
+@media (min-width: 361px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .busqueda {
+        max-width: 40%;
+        
+    }
+
+    .opciones-pago {
+        width: 30%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .navegacion {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navegacion ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navegacion a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 20px 0;
+        font-size: 17px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+
+    .top-header {
+        flex-wrap: nowrap;
+    }
+
+    .basado-en-ultima-visita {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

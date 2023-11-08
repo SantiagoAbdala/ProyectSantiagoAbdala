@@ -1,0 +1,245 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#formularioRegistro {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    align-items: center;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+#datos-titulo {
+    margin: 20px 0 0 0;
+}
+
+#nombre-apellido {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin: 20px 0 0 0;
+}
+
+#nombre-usuario {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin: 20px 0 0 0;
+}
+
+#email {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin: 20px 0 0 0;
+}
+
+#fecha-nacimiento-titulo {
+    margin: 20px 0 0 0;
+}
+
+#fecha-nacimiento {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin: 0 0 20px 0;
+}
+
+#domicilio-titulo {
+    margin: 20px 0 0 0;
+}
+
+#domicilio {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.perfil-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#perfil-usuario-titulo {
+    margin: 20px 0 0 0;
+}
+
+#comprar, #vender {
+    margin: 5px 0;
+}
+
+.categorias-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#categorias-titulo {
+    margin: 20px 0 0 0;
+}
+
+#electro, #moda, #hogar, #jugueteria, #vida-sana {
+    margin: 5px 0;
+}
+
+#foto-usuario-titulo {
+    margin: 20px 0 0 0;
+}
+
+#foto {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+    margin: 20px 0 20px 0;
+}
+
+#contrasena {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+    margin: 20px 0 0 0;
+}
+
+#confirmar-contrasena {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+    margin: 20px 0 20px 0;
+}
+
+#botonEnviarRegister {
+    background-color: #1259c3;
+    color: #ffffff;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+    margin: 20px 0 0 0;
+}
+
+#botonBorrarRegister {
+    background-color: #1259c3;
+    color: #ffffff;
+    width: 50vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+    margin: 20px 0 0 0;
+}
+
+
+
+
+@media (min-width: 361px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .busqueda {
+        width: 30%;
+    }
+
+    .opciones-pago {
+        width: 30%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .navegacion {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navegacion ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navegacion a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 20px 0;
+        font-size: 17px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+
+    .basado-en-ultima-visita {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
