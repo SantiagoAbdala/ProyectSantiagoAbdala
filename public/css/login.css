@@ -57,6 +57,12 @@ Verde: #39b54a;
     border-radius: 5px;
     margin: 20px 0;
     border: 1px solid #ffffff;
+    transition-property: background-color;
+    transition-duration: 0,5s;
+}
+
+#botonEnviarLogin:hover {
+    background-color: #0022AA;
 }
 
 
@@ -139,5 +145,21 @@ Verde: #39b54a;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedorSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
     }
 }

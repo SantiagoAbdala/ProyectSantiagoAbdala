@@ -114,7 +114,8 @@ footer {
 
 footer i {
     color: #1259c3;
-    font-size: 50px;
+    font-size: 30px;
+    margin: 5px;
 }
 
 footer section {
@@ -206,5 +207,21 @@ footer section {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedorSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
     }
 }

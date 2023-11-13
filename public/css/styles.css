@@ -73,16 +73,24 @@ main h2 {
     height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
+    color: #39b54a;
     border-radius: 50%;
     position: absolute;
     right: 20px;
     top: -15px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover i {
+    transform: rotate(-90deg);
 }
 
 .producto {
     display: flex;
     position: relative;
     flex-direction: column;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .precios {
@@ -111,6 +119,7 @@ main h2 {
     font-size: 16px;
     margin-left: 5%;
     display: none;
+    transition: 0.3s ease-in-out;
 }
 
 .imagen {
@@ -201,5 +210,29 @@ main h2 {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
+    }
+
+    .producto:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .producto:hover .descripciones {
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedorSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
     }
 }

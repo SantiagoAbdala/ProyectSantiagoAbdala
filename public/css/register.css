@@ -258,4 +258,20 @@ Verde: #39b54a;
         flex-wrap: nowrap;
         justify-content: space-around;
     }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedorSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+    }
 }
