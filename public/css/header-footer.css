@@ -35,43 +35,43 @@ header {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100vw;
-    height: 6vh;
+    height: 10vh;
 }
 
 .opciones-pago {
-    max-width: 100%;
     text-align: center;
     font-size: 14px;
-    margin: 10px;
+    padding: 15px;
+    font-weight: 400;
+    
 }
 
 .busqueda {
-    width: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    max-width: 40%;
+    height: 5vh;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 
 .barra-busqueda {
-    background-color: #ebebeb;
-    border-radius: 5px 0px 0px 5px;
-    margin: 0;
-    padding: 0;
+    background-color: #ffffff;
     max-width: 80%;
-    border: none;
     height: 100%;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 5px;
 }
 
 .boton-busqueda {
-    background-color: #ebebeb;
-    border-radius: 0px 5px 5px 0px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    padding-right: 5px;
-    padding-left: 5px;
-    height: 100%;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    cursor: pointer;
 }
 
 .navegacion {
@@ -189,6 +189,22 @@ footer section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .basado-en-ultima-visita {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-around;
     }
 }

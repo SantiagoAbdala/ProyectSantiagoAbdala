@@ -125,3 +125,19 @@ Verde: #39b54a;
         justify-content: space-around;
     }
 }
+
+@media (min-width: 1024px) {
+    .basado-en-ultima-visita {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+}
