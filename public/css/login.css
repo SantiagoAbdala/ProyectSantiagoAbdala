@@ -147,6 +147,14 @@ Verde: #39b54a;
         justify-content: space-around;
     }
 
+    .producto:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .producto:hover .descripciones {
+        display: block;
+    }
+
     footer {
         display: flex;
         flex-wrap: wrap;
