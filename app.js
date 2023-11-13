@@ -17,6 +17,13 @@ app.get('/login', (req,res)=>{
     res.sendFile(path.join(__dirname, './views/login.html'))
 })
 
+app.get('*', (req, res) => {
+    res.send(`
+    <h1>No existe esa página</h1>
+    <h3><a href="/">Volver al Home</a></h3>
+    `)
+});
+
 app.listen(port, ()=>{
     console.log(`El servidor esta funcionando en el puerto ${port} http://localhost:${port}`);
 })
