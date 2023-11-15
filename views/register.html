@@ -23,6 +23,7 @@
 
         <div class="top-header">
             <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de la empresa">
+            
             <div class="busqueda">
                 <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
                 <button class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -78,27 +79,27 @@
         <label for="domicilio" id="domicilio-titulo">Domicilio:</label>
         <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" required>
 
-       <div class="perfil-box">
-        <label for="perfil-usuario" id="perfil-usuario-titulo">Perfil del usuario:</label>
-        <input type="radio" id="comprar" name="perfil" value="comprar">
-        <label for="comprar">Comprar</label>
-        <input type="radio" id="vender" name="perfil" value="vender">
-        <label for="vender">Vender</label>
-       </div>
+        <div class="perfil-box">
+            <label for="perfil-usuario" id="perfil-usuario-titulo">Perfil del usuario:</label>
+            <input type="radio" id="comprar" name="perfil" value="comprar">
+            <label for="comprar">Comprar</label>
+            <input type="radio" id="vender" name="perfil" value="vender">
+            <label for="vender">Vender</label>
+        </div>
 
-       <div class="categorias-box">
-        <label for="categorias" id="categorias-titulo">Categorías de interés:</label>
-        <input type="checkbox" id="electro" name="categorias" value="electro">
-        <label for="electro">Electro</label>
-        <input type="checkbox" id="moda" name="categorias" value="moda">
-        <label for="moda">Moda</label>
-        <input type="checkbox" id="hogar" name="categorias" value="hogar">
-        <label for="hogar">Hogar</label>
-        <input type="checkbox" id="jugueteria" name="categorias" value="jugueteria">
-        <label for="jugueteria">Juguetería</label>
-        <input type="checkbox" id="vida-sana" name="categorias" value="vida-sana">
-        <label for="vida-sana">Vida Sana</label>
-       </div>
+        <div class="categorias-box">
+            <label for="categorias" id="categorias-titulo">Categorías de interés:</label>
+            <input type="checkbox" id="electro" name="categorias" value="electro">
+            <label for="electro">Electro</label>
+            <input type="checkbox" id="moda" name="categorias" value="moda">
+            <label for="moda">Moda</label>
+            <input type="checkbox" id="hogar" name="categorias" value="hogar">
+            <label for="hogar">Hogar</label>
+            <input type="checkbox" id="jugueteria" name="categorias" value="jugueteria">
+            <label for="jugueteria">Juguetería</label>
+            <input type="checkbox" id="vida-sana" name="categorias" value="vida-sana">
+            <label for="vida-sana">Vida Sana</label>
+        </div>
 
         <label for="foto" id="foto-usuario-titulo">Foto de usuario:</label>
         <input type="file" id="foto" name="foto">
@@ -106,11 +107,13 @@
 
         <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
 
-        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" placeholder="Confirmar Contraseña" required>
+        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" placeholder="Confirmar Contraseña"
+            required>
 
-
-        <input id="botonEnviarRegister" type="submit" value="Enviar">
-        <input id="botonBorrarRegister" type="reset" value="Borrar">
+        <div class="botonesBox">
+            <input id="botonEnviarRegister" type="submit" value="Enviar">
+            <input id="botonBorrarRegister" type="reset" value="Borrar">
+        </div>
 
     </form>
 
@@ -120,13 +123,15 @@
             <section class="seccion-pago">
                 <i class="fa-solid fa-credit-card"></i>
                 <h4>Pagá con tarjeta o en efectivo</h4>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es
                     seguro!</p>
             </section>
             <section class="seccion-envio-gratis">
                 <i class="fa-solid fa-gift"></i>
                 <h4>Envío gratis desde $2,500</h4>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio de
                     Mercado Puntos.</p>
             </section>
             <section class="seccion-seguridad">

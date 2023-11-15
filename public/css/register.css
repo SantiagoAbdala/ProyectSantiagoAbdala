@@ -32,7 +32,7 @@ Verde: #39b54a;
 #nombre-apellido {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ffffff;
@@ -42,7 +42,7 @@ Verde: #39b54a;
 #nombre-usuario {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ffffff;
@@ -52,7 +52,7 @@ Verde: #39b54a;
 #email {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ffffff;
@@ -66,7 +66,7 @@ Verde: #39b54a;
 #fecha-nacimiento {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ffffff;
@@ -80,7 +80,7 @@ Verde: #39b54a;
 #domicilio {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ffffff;
@@ -123,7 +123,7 @@ Verde: #39b54a;
 #foto {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;
@@ -134,7 +134,7 @@ Verde: #39b54a;
 #contrasena {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;
@@ -145,7 +145,7 @@ Verde: #39b54a;
 #confirmar-contrasena {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;
@@ -153,26 +153,34 @@ Verde: #39b54a;
     margin: 20px 0 20px 0;
 }
 
+.botonesBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #botonEnviarRegister {
     background-color: #1259c3;
     color: #ffffff;
-    width: 50vw;
+    width: 50px;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;
     border: 1px solid #ffffff;
     margin: 20px 0 0 0;
+    margin-right: 10px;
 }
 
 #botonBorrarRegister {
     background-color: #1259c3;
     color: #ffffff;
-    width: 50vw;
+    width: 50px;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;
     border: 1px solid #ffffff;
     margin: 20px 0 0 0;
+    margin-left: 10px;
 }
 
 

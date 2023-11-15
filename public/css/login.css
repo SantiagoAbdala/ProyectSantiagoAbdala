@@ -32,7 +32,7 @@ Verde: #39b54a;
 #usuario {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;
@@ -42,7 +42,7 @@ Verde: #39b54a;
 #contrasena {
     background-color: #ffffff;
     color: #03264C;
-    width: 50vw;
+    width: 0 20vw 0 20vw;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;
@@ -52,7 +52,7 @@ Verde: #39b54a;
 #botonEnviarLogin {
     background-color: #1259c3;
     color: #ffffff;
-    width: 50vw;
+    width: 50px;
     height: 30px;
     border-radius: 5px;
     margin: 20px 0;

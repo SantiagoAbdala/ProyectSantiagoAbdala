@@ -47,13 +47,16 @@ header {
 }
 
 .busqueda {
+    display: flex;
     max-width: 40%;
     height: 5vh;
     background-color: #ffffff;
     border-radius: 5px;
+    justify-content: space-evenly;
 }
 
 .barra-busqueda {
+    display: flex;
     background-color: #ffffff;
     max-width: 80%;
     height: 100%;
@@ -65,6 +68,8 @@ header {
 }
 
 .boton-busqueda {
+    display: flex;
+    align-items: center;
     background: none;
     border: 0;
     color: inherit;
@@ -76,11 +81,11 @@ header {
 
 .navegacion {
     background-color: #EAC926;
-    display: none;
 }
 
 .navegacion ul {
     list-style: none;
+    display: none;
 }
 
 
@@ -142,7 +147,7 @@ footer section {
     }
 
     .burger-menu {
-        display: none;
+        display: block;
     }
 
     .navegacion {
@@ -179,6 +184,10 @@ footer section {
         flex-wrap: nowrap;
     }
 
+    .burger-menu {
+        display: none;
+    }
+
     .basado-en-ultima-visita {
         display: flex;
         flex-direction: row;
@@ -195,6 +204,10 @@ footer section {
 }
 
 @media (min-width: 1024px) {
+    .burger-menu {
+        display: none;
+    }
+
     .basado-en-ultima-visita {
         display: flex;
         flex-direction: row;
